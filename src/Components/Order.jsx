@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext } from "react";
 // eslint-disable-next-line
 import AppContext from "../context/AppContext";
 

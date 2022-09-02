@@ -7,13 +7,13 @@ import AppContext from "./context/AppContext";
 import useInitialState from "./hooks/useInitialState";
 import Order from "./Components/Order";
 
-const API = "https://api.escuelajs.co/api/v1/products?limit=14&offset=0";
+
 
 function App() {
 
   const initialState = useInitialState()
 
-  const products = useGetProducts(API)
+  const products = useGetProducts()
 
   return (
     <AppContext.Provider value={initialState}>

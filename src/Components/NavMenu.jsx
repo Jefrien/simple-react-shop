@@ -1,8 +1,7 @@
-import React, { useState, useContext } from "react";
+import React, { useContext } from "react";
 import AppContext from "../context/AppContext";
 
-const NavBar = () => {
-  const [ show, setShow ] = useState(false);
+const NavBar = () => {  
   const { state, toggleOrder } = useContext(AppContext)
 
   const handleMenu = () => {
@@ -39,16 +38,12 @@ const NavBar = () => {
             ></path>
           </svg>
         </button>
-        {show && (
-          <button className="px-4 py-2 bg-purple-700 text-white font-semibold hover:bg-white border-2 hover:border-purple-700 hover:text-purple-700 transition-colors">
-            Hola mundo
-          </button>
-        )}
+      
         <div className="hidden w-full md:block md:w-auto" id="navbar-default">
           <ul className="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
             <li>
               <a
-                href="#"
+                href="#!"
                 className="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"
                 aria-current="page"
               >
@@ -57,7 +52,7 @@ const NavBar = () => {
             </li>
             <li>
               <a
-                href="#"
+                href="#test"
                 className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
               >
                 About
@@ -65,7 +60,7 @@ const NavBar = () => {
             </li>
             <li>
               <a
-                href="#"
+                href="#!"
                 className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
               >
                 Services
@@ -73,7 +68,7 @@ const NavBar = () => {
             </li>
             <li>
               <a
-                href="#"
+                href="#!"
                 className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
               >
                 Pricing
@@ -82,7 +77,7 @@ const NavBar = () => {
             </li>
             <li>
               <a
-                href="#"
+                href="#!"
                 onClick={handleMenu}
                 className="block py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >

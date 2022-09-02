@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 
-const useGetProducts = (API) => {
+const useGetProducts = () => {
   const [products, setProducts] = useState([]);
-
+  const API = "https://api.escuelajs.co/api/v1/products?limit=14&offset=0";
   useEffect(() => {
     (async () => {
       const resp = await axios.get(API);
